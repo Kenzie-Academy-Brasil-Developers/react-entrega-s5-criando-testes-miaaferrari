@@ -12,11 +12,13 @@ const Search = () => {
       </Header>
       <div className="Search">
         <Input
+          name="search"
           type="number"
           placeholder="Insira o CEP"
           onChange={(event) => setCepNumber(event.target.value)}
         />
         <Button
+          type='button'
           primary
           disabled={!cepNumber}
           onClick={() => handleSearch(cepNumber)}

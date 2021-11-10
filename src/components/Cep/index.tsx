@@ -13,11 +13,11 @@ const Address = () => {
           <Form>
             <Form.Field inline>
               <Header size="small">Logradouro</Header>
-              <Input fluid value={ceps.logradouro} />
+              <Input name='logradouro' fluid value={ceps.logradouro} />
             </Form.Field>
             <Form.Field inline>
               <Header size="small">Número</Header>
-              <Input fluid />
+              <Input name='numero' fluid />
               {ceps.complemento ? (
                 <Label basic color="red" pointing>
                   {ceps.complemento}
@@ -29,20 +29,20 @@ const Address = () => {
               )}
               <Form.Field inline>
                 <Header size="small">Complemento</Header>
-                <Input fluid placeholder="Apartamento, bloco, ..." on />
+                <Input name='complemento' fluid placeholder="Apartamento, bloco, ..." on />
               </Form.Field>
             </Form.Field>
             <Form.Field inline>
               <Header size="small">Bairro</Header>
-              <Input fluid value={ceps.bairro} />
+              <Input name='bairro' fluid value={ceps.bairro} />
             </Form.Field>
             <Form.Field inline>
               <Header size="small">Cidade</Header>
-              <Input fluid value={ceps.cidade} />
+              <Input name='cidade' fluid value={ceps.cidade} />
             </Form.Field>
             <Form.Field inline>
               <Header size="small">Estado</Header>
-              <Input fluid value={ceps.estado} />
+              <Input name='estado' fluid value={ceps.estado} />
             </Form.Field>
           </Form>
         </div>
